@@ -37,7 +37,7 @@ public:
     int gcd(int a, int b);
 
     // Overloaded addition operator
-    const Rational operator+(const Rational& other) const;
+    Rational operator+(const Rational &other) const;
 
     // Overloaded subtraction operator
     Rational operator-(const Rational& other) const;

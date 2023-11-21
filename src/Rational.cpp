@@ -60,24 +60,24 @@ using namespace std;
     }
 
     // Overloaded addition operator
-    const Rational Rational :: operator+(const Rational& other) const {
+    Rational Rational :: operator+(const Rational& other) const {
         return Rational(numerator * other.denominator + other.numerator * denominator,
                         denominator * other.denominator);
     }
 
     // Overloaded subtraction operator
-    Rational operator-(const Rational& other) const {
+    Rational Rational :: operator-(const Rational& other) const {
         return Rational(numerator * other.denominator - other.numerator * denominator,
                         denominator * other.denominator);
     }
 
     // Overloaded multiplication operator
-    Rational operator*(const Rational& other) const {
+    Rational Rational :: operator*(const Rational& other) const {
         return Rational(numerator * other.numerator, denominator * other.denominator);
     }
 
     // Overloaded division operator
-    Rational operator/(const Rational& other) const {
+    Rational Rational :: operator/(const Rational& other) const {
         if (other.numerator == 0) {
             std::cerr << "Error: Division by zero." << std::endl;
             return Rational();  // Returning default value in case of division by zero
@@ -86,21 +86,21 @@ using namespace std;
     }
 
     // Overloaded greater-than operator
-    bool operator>(const Rational& other) const {
+    bool Rational :: operator>(const Rational& other) const {
         return numerator * other.denominator > other.numerator * denominator;
     }
 
     // Overloaded less-than operator
-    bool operator<(const Rational& other) const {
+    bool Rational :: operator<(const Rational& other) const {
         return numerator * other.denominator < other.numerator * denominator;
     }
 
     // Overloaded equality operator
-    bool operator==(const Rational& other) const {
+    bool Rational :: operator==(const Rational& other) const {
         return numerator * other.denominator == other.numerator * denominator;
     }
 
-    friend std::ostream& operator<<(std::ostream& os, const Rational& rational) {
+    std::ostream& operator<<(std::ostream& os, const Rational& rational) {
         os << rational.numerator;
         if (rational.denominator != 1) {
             os << '/' << rational.denominator;
@@ -108,4 +108,3 @@ using namespace std;
         return os;
     }
 
-};

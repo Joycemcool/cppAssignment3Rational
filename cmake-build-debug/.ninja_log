@@ -1,3 +1,10 @@
 # ninja log v5
 0	227	7217688072402154	CMakeFiles/cppAssignment3.dir/main.cpp.obj	8efda83b7a544e46
 229	319	7217688073298438	cppAssignment3.exe	14171b971ad41e42
+4	386	7223067544136250	CMakeFiles/cppAssignment3.dir/src/Rational.cpp.obj	79f1792c2d993c5a
+0	413	7223067544406099	CMakeFiles/cppAssignment3.dir/src/main.cpp.obj	10a8c12469dd3070
+413	611	7223067546368986	cppAssignment3.exe	bdb41784bb7a81ac
+3	319	7223090243746185	CMakeFiles/cppAssignment3.dir/src/main.cpp.obj	10a8c12469dd3070
+319	402	7223090244544639	cppAssignment3.exe	bdb41784bb7a81ac
+2	326	7223120832693952	CMakeFiles/cppAssignment3.dir/src/main.cpp.obj	10a8c12469dd3070
+326	391	7223120833313947	cppAssignment3.exe	bdb41784bb7a81ac

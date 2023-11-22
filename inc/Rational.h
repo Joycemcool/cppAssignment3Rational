@@ -27,9 +27,6 @@ public:
     // Constructor from string
     Rational(const string &str);
 
-    //Destructor
-    ~Rational();
-
     //Normalize the answers
     void normalize();
 
@@ -58,7 +55,6 @@ public:
     bool operator==(const Rational& other) const;
 
     friend std::ostream& operator<<(ostream& os, const Rational& rational);
-
 };
 
 #endif //CPPASSIGNMENT3_RATIONAL_H

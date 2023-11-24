@@ -27,7 +27,6 @@ using namespace std;
     // Default constructor
     Rational :: Rational() :numerator(0), denominator(1) {
         cout << "Default constructor called." << endl;
-        cout<< numerator <<"/"<<denominator;
     }
 
     // Constructor for whole numbers
@@ -55,8 +54,7 @@ using namespace std;
         normalize();
     }
 
-    //Destructor
-    // Overloaded addition operator
+    //Destructor    // Overloaded addition operator
     Rational Rational :: operator+(const Rational& other) const {
         return Rational(numerator * other.denominator + other.numerator * denominator,
                         denominator * other.denominator);
@@ -103,6 +101,10 @@ using namespace std;
             os << '/' << rational.denominator;
         }
         return os;
+    }
+
+    bool Rational ::isZero() const {
+            return numerator ==0 && denominator !=0;
     }
 
 

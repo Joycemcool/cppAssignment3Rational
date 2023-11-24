@@ -55,6 +55,8 @@ public:
     bool operator==(const Rational& other) const;
 
     friend std::ostream& operator<<(ostream& os, const Rational& rational);
+
+    bool isZero() const;
 };
 
 #endif //CPPASSIGNMENT3_RATIONAL_H

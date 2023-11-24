@@ -125,7 +125,6 @@ int main() {
         cout << inputPrompt2 << endl;
         getline(cin, stringInput2);
         if (stringInput2.find('"') != string::npos ){
-            //stringInput1.erase(std::remove_if(stringInput1.begin(), stringInput1.end(), [](char c) { return c == '"'; }), stringInput1.end());
             if(!isInteger(removeDoubleQuotes(stringInput2))){
                 isValidInput2= false;
             };
@@ -174,8 +173,6 @@ int main() {
     Rational resultAdd = Rational1 + Rational2;
     cout << "Addition: " << resultAdd << endl;
 
-
-
     cout<<"*********************************************"<<endl;
     cout<<endl;
 
@@ -210,7 +207,6 @@ int main() {
     cout<<endl;
 
     cout << "Rational 1 Equal to Rational 2 (1 - True, 0 - False): " << (Rational1 == Rational2) << endl;
-
 
     return 0;
 }
